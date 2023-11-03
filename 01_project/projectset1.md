@@ -5,7 +5,7 @@
 
 # Solution code
 
-## project 1 : jis box par click karege body ka color usi box ki tarah ho jayega
+## Project 1 : jis box par click karege body ka color usi box ki tarah ho jayega
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -72,5 +72,24 @@ form.addEventListener('submit', (event)=>{
     }
   }
 });
+
+```
+
+
+# Project 3: Digital Clock
+
+```javascript
+
+const clock = document.querySelector("#clock");
+
+
+setInterval(()=>{
+  
+let date = new Date();
+
+clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
+
+
 
 ```
